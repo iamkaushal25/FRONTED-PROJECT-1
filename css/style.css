@@ -1,0 +1,129 @@
+/* Header Styling */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ff3d00;
+  padding: 10px 30px;
+  color: white;
+}
+
+.logo img {
+  width: 80px; /* Smaller header logo */
+  height: auto;
+}
+
+header ul {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+}
+
+header ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+/* Hero Section (Main) */
+main section:first-of-type {
+  text-align: center;
+  background: url('../img/bg.png') no-repeat center center/cover;
+  padding: 100px 20px;
+  color: white;
+}
+
+main section:first-of-type img {
+  width: 220px; /* Bigger main logo */
+  height: auto;
+  margin-bottom: 20px;
+  animation: zoomIn 1s ease-out;
+}
+
+main section:first-of-type p {
+  font-size: 26px;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+
+main section:first-of-type input {
+  padding: 12px 25px;
+  width: 80%;
+  max-width: 500px;
+  border-radius: 25px;
+  border: none;
+  font-size: 16px;
+  outline: none;
+}
+
+/* Optional Animation */
+@keyframes zoomIn {
+  from {
+    transform: scale(0.8);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+/* Footer Styling */
+footer {
+  background-color: #ff3d00;   /* Bold red background */
+  color: white;                /* White text */
+  text-align: center;          /* Centered text */
+  padding: 15px 20px;          /* Comfortable padding */
+  font-size: 14px;             /* Slightly smaller font */
+  font-weight: 500;
+  position: relative;          /* For layering if needed */
+  box-shadow: 0 -3px 10px rgba(0,0,0,0.1); /* subtle shadow on top */
+  margin-top: 40px;
+  user-select: none;           /* Prevent text selection */
+}
+
+/* Menu styling for pizza, burger, momos */
+.menu {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.menu-item {
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 8px 15px rgba(255, 61, 0, 0.2);
+  width: 220px;
+  padding: 15px;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.menu-item:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 15px 25px rgba(255, 61, 0, 0.4);
+}
+
+.menu-item img {
+  width: 160px;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.menu-item h3 {
+  color: #ff3d00;
+  margin-bottom: 8px;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.menu-item p {
+  font-size: 14px;
+  color: #444;
+  margin-bottom: 12px;
+}
